@@ -7,9 +7,10 @@
                             <img src="{{url('images/'.Auth::user()->image)}}" class="user-image img-responsive"/>
                         @else
                         <img src="{{url('assets/img/logo.png')}}" class="user-image img-responsive"/>
-                        @endif 
+                        @endif
                         <!-- <img src="{{url('assets/img/logo.png')}}" class="user-image img-responsive"/>
 					             </li> -->
+                                 
 
                     <li>
                         <a class="{{ Request::segment(1) == 'admin' ? 'active-menu' : null }}"  href="{{ url('admin') }}"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
