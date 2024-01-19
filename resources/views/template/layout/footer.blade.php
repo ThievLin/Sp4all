@@ -1,86 +1,194 @@
-               <!-- ============================== Footer ===================== -->
-               <footer>
-                <div class="container">
-                    <div class="main_footer" style="padding-bottom: 50px;">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 about_gardener" >
-                                <h5>About <span>Promotion Equitable Climate Actions</span> in Cambodia Project</h5>
-                                <p style="color: #9e9e9e;">The "Promotion Equitable Climate Actions in Cambodia" project is a project funded by Oxfam to reduce carbon emissions from agroforestry exploits in CFs and CPAs through the promotion of sustainable and alternative livelihoods and holding the RGC accountable to its Nationally Determined Contribution (NDC) commitment.</p>
-                                <!-- <a href="#" class="button_main buy_gardener transition3s mouse_hover1">Buy  Gardener Now</a> -->
-                            </div>
-                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 services">
-                                <h5>Protected Area Community</h5>
-                                <ul>
-                                    <li><a href="abounlue" class="transition3s"><i class="fa fa-check-square"></i>Aboun Lue (CPA)</a></li>
-                                    <li><a href="nglav" class="transition3s"><i class="fa fa-check-square"></i>Nglav (CPA)</a></li>
-                                    <li><a href="yuoknamram" class="transition3s"><i class="fa fa-check-square"></i>Yuoknamram (CPA) </a></li>
-                                    <li><a href="chammarek" class="transition3s"><i class="fa fa-check-square"></i>Cham Marek (CPA) </a></li>
-                                    <li><a href="ourcpa" class="transition3s"><i class="fa fa-check-square"></i> All (CPA)</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 cf_links">
-                                <h5>Community Forest</h5>
-                                <br>
-                                <ul>
-                                    <li><a href="lapaek" class="transition3s"><i class="fa fa-check-square"></i>Bos Lapaek (CF)</a></li>
-                                    <li><a href="yaynheb" class="transition3s"><i class="fa fa-check-square"></i>Bos YayNheb (CF)</a></li>
-                                    <li><a href="seangveal" class="transition3s"><i class="fa fa-check-square"></i>Kon Seangveal (CF)</a></li>
-                                    <li><a href="angkobthom" class="transition3s"><i class="fa fa-check-square"></i>Ou Angkob Thom (CF)</a></li>
-                                    <li><a href="kladaek" class="transition3s"><i class="fa fa-check-square"></i>Ou Kladaek (CF)</a></li>
-                                    <li><a href="#" class="transition3s"><i class="fa fa-check-square"></i>.................... (CF)</a></li>
-                                    <li><a href="ourcf" class="transition3s"><i class="fa fa-check-square"></i>All (CF)</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 oxfam_links">
-                                <h5>Oxfam Cambodia</h5>
-                                <br>
-                                <ul>
-                                    <li><i class="fa fa-location-arrow"></i>&emsp;The Point, 3rd Floor, U08-09, No 113C, Mao Tse Tung Boulevard, Tuol Svay Prey I, Beung Keng Kang Phnom Penh, Cambodia</li>
-                                    <li><i class="fa fa-calendar-times-o"></i>&emsp;Tel: (+855) 23 885 412; (855) 23 885 413</li>
-                                    <li><i class="fa fa-envelope-o"></i>&emsp;<a href=" {{ url('https://cambodia-redd.org/')}}" class="transition3s">cambodia-redd.org</a></li>
-                                    <!-- <li>Mon - Sat 8.00 - 18.00 <br> Sunday - <span>CLOSED</span></li> -->
-                                </ul>
-                            </div>
-                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 ministry_links">
-                                <h5>Ministry Environment</h5>
-                                <br>
-                                <ul>
-                                    <li><i class="fa fa-location-arrow"></i>&emsp;Techo Heritage Building, Lot 503, Bassac River, Sangkat Tonle Bassac,
-                                        Khan Chamkarmon, Phnom Penh </li>
-                                    <li><i class="fa fa-calendar-times-o"></i>&emsp;Tel: (+855) 23 213 908
-                                        (+855) 23 220 369</li>
-                                    <li><i class="fa fa-envelope-o"></i>&emsp;<a href=" {{ url('https://www.moe.gov.kh/')}}" class="transition3s">moe.gov.kh</a></li>
-                                    <!-- <li>Mon - Sat 8.00 - 18.00 <br> Sunday - <span>CLOSED</span></li> -->
-                                </ul>
-                            </div>
-                        </div> <!-- /row -->
-                    </div> <!-- /main_footer -->
-                    <div class="bottom_footer">
-                        <div class="row">
-                            
-                            <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12" style="padding-top: 20px;">
-                                <div>
-                                    <ul style="display: flex;">
-                                        <li><a href=" {{ url('https://www.facebook.com/OxfaminCambodia/?ref=hl')}}"><img src="images/home/facebook.png" alt="" style="height: 35px; height: 35px;"></a></li>
-                                        <li><a href=" {{ url('https://twitter.com/OxfamKH')}}"><img src="images/home/twitter.png" alt="" style="height: 35px; height: 35px; padding-left: 7px;"></a></li>
-                                        <li><a href=" {{ url('https://www.youtube.com/user/OxfamKH')}}"><img src="images/home/youtube.png" alt="" style="height: 35px; height: 35px; padding-left: 7px;"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 col-md-6 col-sm-8 col-xs-12">
-                                <p style="color: #9e9e9e; font-size: small;"> Designed And developed By TITB.</p>
-                            </div>
-                            <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
-                                <a href="#top" class="back_top"><i class="fa fa-chevron-up"></i></a>
-                            </div>
+<!-- Footer -->
+
+<footer class="footer">
+
+    <div class="footer-widgets">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <div class="widget widget-brand">
+
+                        <div class="logo logo-footer">
+
+                            <a href="#"><img src="images/logo/logo.png" alt="Good News" style="height: 85px;"></a>
+
                         </div>
-                    </div> <!-- /bottom_footer -->
-                </div> <!-- /container -->
-             </footer>
-             
-             <!-- ============================== /Footer ===================== -->
+
+                        <p>The SP4ALL is a CSO led coalition aspiring to raise citizen’s awareness on social protection and elevate citizen’s concerns to government organizations.</p>
+
+                    </div><!-- /.widget-brand -->
+
+                    <div class="widget widget-social">
+
+                        <h5 class="widget-title">Follow Us</h5>
+
+                        <div class="social-list">
+
+                            <a href="#"><img src="images/facebook.svg" alt="image"></a>
+
+                            <a href="#"><img src="images/twitter.svg" alt="image"></a>
+
+                            <a href="#"><img src="images/youtube.svg" alt="image"></a>
+
+                            <a href="#"><img src="images/dribbble.svg" alt="image"></a>
+
+                        </div>
+
+                        <a class="email" href="#"><span class="__cf_email__" data-cfemail="da9fb7bbb3b69aa3b5afa8b9b5b7aabbb4a3f4b9b5b7">[email&#160;protected]</span></a>
+
+                    </div><!-- /.widget-social -->
+
+                </div><!-- /.col-md-4 -->
 
 
 
+                <div class="col-md-4">
 
- 
+                    <div class="widget widget-services clearfix">
+
+                        <h5 class="widget-title">Quick Links</h5>
+
+                            <ul class="one-half">
+
+                                <li><a href="#">Home</a></li>
+
+                                <li><a href="#">About us</a></li>
+
+                                <li><a href="#">Our Mission</a></li>
+
+                                <li><a href="#">Our vision</a></li>
+
+
+
+                            </ul>
+
+
+
+                            <ul class="one-half">
+
+                                <li><a href="#">Structure</a></li>
+
+                                <li><a href="#">Join Us</a></li>
+
+                                <li><a href="#">Contact Us</a></li>
+
+                                <li><a href="#">News</a></li>
+
+                            </ul>
+
+                        </div>
+
+                </div>
+
+
+
+                <div class="col-md-4">
+
+                   <div class="widget widget-newsletter">
+
+                      <h5 class="widget-title">Subscribe Newsletter</h5>
+
+                      <p>At SP4ALL, our mission is steadfast and clear: to empower, represent, and advocate for every Cambodian citizen in the realm of social protection. </p>
+
+                      <form method="post" action="#" id="subscribe-form" data-mailchimp="true">
+
+                         <div id="subscribe-content">
+
+                            <div class="input">
+
+                               <input type="text" id="subscribe-email" name="subscribe-email" placeholder="Your address e-mail">
+
+                            </div>
+
+                            <div class="button">
+
+                               <button type="button" id="subscribe-button" class="" title="Subscribe now" style="background-color: orange;"><i class="fa fa-paper-plane-o"></i></button>
+
+                            </div>
+
+                         </div>
+
+                         <div id="subscribe-msg"></div>
+
+                      </form>
+
+                   </div><!-- /.widget-newsletter -->
+
+                </div>
+
+
+
+            </div><!-- /.row -->
+
+
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div class="copyright">
+
+                        <p> Designed And Developed By TITB.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div><!-- /.container -->
+
+    </div><!-- /.footer-widgets -->
+
+</footer>
+
+
+
+<!-- Go Top -->
+
+<a class="go-top" style="background-color: orange;">
+
+    <i class="fa fa-angle-up"></i>
+
+</a>
+
+
+
+<div id="site-off-canvas">
+
+    <span class="close"></span>
+
+    <div class="wrapper">
+
+
+
+        <div class="widget widget_search">
+
+            <form role="search" method="get" class="search-form" action="#">
+
+                <label>
+
+                    <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+
+                </label>
+
+                <input type="submit" class="search-submit" value="Search">
+
+            </form>
+
+        </div><!-- /.widget-search -->
+
+
+    </div>
+
+</div>
+
+
+
+</div>

@@ -1,110 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
 <head>
-	<meta charset="UTF-8">
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>SP4ALL</title>
 
-	<!-- For IE -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="themesflat.com">
 
-	<!-- For Resposive Device -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<title>Oxfam</title>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('stylesheets/bootstrap.css')}}" >
 
-	<!-- Favicon -->
-	<link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/fav-icon/apple-icon-57x57.png')}}">
-	<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/fav-icon/apple-icon-60x60.png')}}">
-	<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/fav-icon/apple-icon-72x72.png')}}">
-	<link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/fav-icon/apple-icon-76x76.png')}}">
-	<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('images/fav-icon/apple-icon-114x114.png')}}">
-	<link rel="apple-touch-icon" sizes="120x120" href="{{ asset('images/fav-icon/apple-icon-120x120.png')}}">
-	<link rel="apple-touch-icon" sizes="144x144" href="{{ asset('images/fav-icon/apple-icon-144x144.png')}}">
-	<link rel="apple-touch-icon" sizes="152x152" href="{{ asset('images/fav-icon/apple-icon-152x152.png')}}">
-	<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/fav-icon/apple-icon-180x180.png')}}">
-	<link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('images/fav-icon/android-icon-192x192.png')}}">
-	<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/fav-icon/favicon-32x32.png')}}">
-	<link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/fav-icon/favicon-96x96.png')}}">
-	<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/fav-icon/favicon-16x16.png')}}">
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('stylesheets/style.css')}}">
 
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('stylesheets/responsive.css')}}">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap/bootstrap.css')}}" media="screen">
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('stylesheets/colors/color1.css')}}" id="colors">
 
-	<!-- Vendor css -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/revolution/settings.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/revolution/layers.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/revolution/navigation.css')}}">
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('stylesheets/animate.css')}}">
 
-	<!-- Important Owl stylesheet -->
-	<link rel="stylesheet" href="{{ asset('css/owl.carousel.css')}}">
-	<link rel="stylesheet" href="{{ asset('css/owl.theme.css')}}">
+    <!-- Favicon and touch icons  -->
+    <link href="{{ asset('icon/apple-touch-icon-48-precomposed.png')}}" rel="apple-touch-icon-precomposed" sizes="48x48">
+    <link href="{{ asset('icon/apple-touch-icon-32-precomposed.png')}}" rel="apple-touch-icon-precomposed">
+    <link href="{{ asset('icon/favicon.png" rel="shortcut icon')}}">
 
-	<!-- Fancy box css -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/fancy-box/jquery.fancybox.css')}}">
-
-	<!-- ui css -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery-css/jquery-ui.css')}}">
-	
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="{{ asset('fonts/font-awesome/css/font-awesome.min.css')}}">
-
-	<!-- Fonts -->
-	<link href="{{ asset('https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900,900italic')}}" rel='stylesheet' type='text/css'>
-	<link href="{{ asset('https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic')}}" rel='stylesheet' type='text/css'>
-
-	<!-- Custom Css -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/custom/style.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/responsive/responsive.css')}}">
-
-
-	<!--[if lt IE 9]>
-   		<script src="js/html5shiv.js"></script>
-	<![endif]-->
-
-
-
+    <!--[if lt IE 9]>
+        <script src="javascript/html5shiv.js"></script>
+        <script src="javascript/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body class="home layout_changer">
 
-	@include('template.layout.top_header')
-	@include('template.layout.bot_header')
-	@include('template.layout.menu')
+<html>
+    <body class="header_sticky">
+        <!-- Preloader -->
+    <section class="loading-overlay">
+        <div class="Loading-Page">
+            <h2 class="loader">Loading</h2>
+        </div>
+    </section>
 
-	
-	@include('template.layout.header')
-  <!-- Js File -->
-	@yield('content')
-   <!-- j Query -->
-   @include('template.layout.footer')
-   <script type="text/javascript" src="{{ asset('js/jquery-2.1.4.js')}}"></script>
+     <!-- Boxed -->
+    <div class="boxed">
 
-   <!-- Bootstrap JS -->
-   <script type="text/javascript" src="{{ asset('js/bootstrap.min.js')}}"></script>
-   <!-- revolution -->
-   <script src="{{ asset('js/revolution/jquery.themepunch.tools.min.js')}}"></script>
-   <script src="{{ asset('js/revolution/jquery.themepunch.revolution.min.js')}}"></script>
-   <script type="text/javascript" src="{{ asset('js/revolution/revolution.extension.slideanims.min.js')}}"></script>
-   <script type="text/javascript" src="{{ asset('js/revolution/revolution.extension.layeranimation.min.js')}}"></script>
-   <script type="text/javascript" src="{{ asset('js/revolution/revolution.extension.navigation.min.js')}}"></script>
-   <script type="text/javascript" src="{{ asset('js/revolution/revolution.extension.kenburn.min.js')}}"></script>
-   <script type="text/javascript" src="{{ asset('js/revolution/revolution.extension.actions.min.js')}}"></script>
+        @include('template.layout.topheader')
+        @include('template.layout.header')
+        @yield('content')
+        @include('template.layout.footer')
 
+    </div>
+    <!-- Javascript -->
+    <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.easing.js"></script>
+    <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
+    <script type="text/javascript" src="javascript/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="javascript/parallax.js"></script>
+    <script type="text/javascript" src="javascript/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="javascript/owl.carousel.js"></script>
+    <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="javascript/jquery-validate.js"></script>
+    <script type="text/javascript" src="javascript/jquery-countTo.js"></script>
+    <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
 
-   <!-- mix it up -->
-   <script type="text/javascript" src="{{ asset('js/jquery.mixitup.min.js')}}"></script>
-   <!-- Owl carousel -->
-   <script src="{{ asset('js/owl.carousel.min.js')}}"></script>
-   <!-- google map -->
-   <script src="{{ asset('http://maps.google.com/maps/api/js')}}"></script> <!-- Gmap Helper -->
-   <script src="{{ asset('js/gmap.js')}}"></script> <!-- gmap JS -->
-   <!-- fancy box -->
-   <script src="{{ asset('js/jquery.fancybox.pack.js')}}"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
 
-   <script type="text/javascript" src="{{ asset('js/validate.js')}}"></script>
-
-   <!-- ui js -->
-   <script type="text/javascript" src="{{ asset('js/jquery-ui.min.js')}}"></script>
-   <!-- main js -->
-   <script type="text/javascript" src="{{ asset('js/main.js')}}"></script>
+    <!-- Revolution Slider -->
+    <script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="javascript/slider.js"></script>
 </body>
 </html>

@@ -13,6 +13,10 @@ use App\Http\Controllers\LoginController;
 |
 */
 
+Route::get('/',function(){
+	return redirect()->to('/home');
+});
+
 Route::get('admin', array('as' => 'admin', 'uses' => 'HomeController@index'));
 
 //Roles
@@ -151,7 +155,7 @@ Route::get('products-product/{id}/edit', ['as' => 'products-product/{id}/edit', 
 Route::post('products-product/{id}/edit', ['as' => 'products-product/{id}/edit', 'uses' => 'ProductController@post_edit_product', 'middleware' => 'roles', 'roles' => ['Administrator', 'Admin', 'User']]);
 Route::get('products-product/{id}/deleted', ['as' => 'products-product/{id}/deleted', 'uses' => 'ProductController@get_delete_product', 'middleware' => 'roles', 'roles' => ['Administrator', 'Admin', 'User']]);
 
-//Branch 
+//Branch
 Route::get('branch', ['as' => 'branch', 'uses' => 'BranchController@index_branch', 'middleware' => 'roles', 'roles' => ['Administrator', 'Admin', 'User']]);
 Route::get('branch/create', ['as' => 'branch/create', 'uses' => 'BranchController@get_create_branch', 'middleware' => 'roles', 'roles' => ['Administrator', 'Admin', 'User']]);
 Route::post('branch/create', ['as' => 'branch/create', 'uses' => 'BranchController@post_create_branch', 'middleware' => 'roles', 'roles' => ['Administrator', 'Admin', 'User']]);
