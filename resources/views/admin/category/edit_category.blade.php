@@ -36,18 +36,24 @@
                 <label>Style</label>
 				<select name="block" class="form-control">
 				  <option value="non">None</option>
-                  <option value="home" <?php if($cat->block == "home"){ echo "selected";}  ?> >Home</option>
-                  <option value="aboutus" <?php if($cat->block == "about"){ echo "selected";}  ?> >About Us</option>
-                  <option value="mission" <?php if($cat->block == "mission"){ echo "selected";}  ?> >Mission</option>
-                  <option value="vision" <?php if($cat->block == "vision"){ echo "selected";}  ?> >Vision</option>
-                  <option value="contact" <?php if($cat->block == "contact"){ echo "selected";}  ?> >Contact</option>
+              <option value="home" <?php if($cat->block == "home"){ echo "selected";}  ?> >Home</option>
+              <option value="about-us" <?php if($cat->block == "about-us"){ echo "selected";}  ?> >About Us</option>
+              <option value="background" <?php if($cat->block == "background"){ echo "selected";}  ?> >Background</option>
+              <option value="mission" <?php if($cat->block == "mission"){ echo "selected";}  ?> >Mission</option>
+              <option value="vision" <?php if($cat->block == "vision"){ echo "selected";}  ?> >Vision</option>
+              <option value="structure" <?php if($cat->block == "structure"){ echo "selected";}  ?> >Structure</option>
+              <option value="new-update" <?php if($cat->block == "new-update"){ echo "selected";}  ?> >New & Update</option>
+              <option value="join-us" <?php if($cat->block == "join-us"){ echo "selected";}  ?> >Join Us</option>
+              <option value="event-workshop" <?php if($cat->block == "event-workshop"){ echo "selected";}  ?> >Event & Workshop</option>
+              <option value="membership" <?php if($cat->block == "membership"){ echo "selected";}  ?> >Membership</option>
+              <option value="contact-us" <?php if($cat->block == "contact"){ echo "selected";}  ?> >Contact Us</option>
  				</select>
               </div>
               <div class="form-group">
                 <label>Parent</label>
                 <select class="form-control" name="parent_id">
-								<?php $cate = App\Models\Category::where('category_type','=','category')->get(); ?>
-										<<option value="">Select Parent Category</option>
+                    <?php $cate = App\Models\Category::where('category_type','=','category')->get(); ?>
+                            <<option value="">Select Parent Category</option>
                     @foreach($cate as $c)
                       <option value="{{$c->id}}" <?php if($c->id == $cat->parent_id){echo "selected";}?> >{{$c->name}}</option>
                     @endforeach
